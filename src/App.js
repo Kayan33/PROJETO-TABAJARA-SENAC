@@ -1,9 +1,9 @@
-import Header from "./components/Header";
+import Rotas from "./routes/route";
 
 function App() {
   return (
     <div >
-      <Header/>
+      <Rotas/>
     </div>
   );
 }
