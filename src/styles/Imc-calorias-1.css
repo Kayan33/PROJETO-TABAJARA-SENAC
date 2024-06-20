@@ -1,0 +1,36 @@
+.container{
+    background: #000000;
+    max-width: 200vh;
+
+}
+
+.calorie-calculator{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly
+}
+
+form-container, h1, p, h3{
+color: #ffffff;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    background: #9C9C9C;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.form div {
+    margin: 5px;
+}
+
+input[type=text] {
+    width: 50%; 
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
