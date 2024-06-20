@@ -20,6 +20,10 @@ nav > a {
     text-decoration: none;
 }
 
+nav:hover {
+    background-color: #fe0202;
+}
+
 img {
     padding-left: 2.5em;
 }

@@ -1,7 +1,8 @@
-function Imc() {
+import React from "react";
+
+export default function Imc() {
     return(
-        <div></div>
+        <div>
+        </div>
     )
 }
-
-export default Imc
