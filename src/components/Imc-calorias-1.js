@@ -1,5 +1,6 @@
 import "../styles/Imc-calorias-1.css"
 import logo from '../assets/homem.png'
+import React from "react"
 
 function Calorias01() {
     return (
@@ -7,27 +8,28 @@ function Calorias01() {
             <article className="calorie-calculator">
                 <div className="form-container">
                     <h1>Calculadora de Calorias</h1>
+                    <div className="respostas-imediadta">
                     <h3>Respostas Imediadta</h3>
-                    <div className="form">
+                    <form className="form">
                         <div>
-                            <p>IDADE</p>
+                            <p>Idade:</p>
                             <input type="text" />
                         </div>
                         <div>
-                            <p>Altura</p>
+                            <p>Altura:</p>
                             <input type="text" />
                         </div>
                         <div>
-                            <p>atual</p>
+                            <p>atual:</p>
                             <input type="text" />
                         </div>
 
                         <div>
-                            <p>Sexo</p>
+                            <p>Sexo:</p>
                             <input type="text" />
                         </div>
                         <div>
-                            <p>Objetivo</p>
+                            <p>Objetivo:</p>
                             <input type="text" />
                         </div>
                         <div>
@@ -38,6 +40,8 @@ function Calorias01() {
                             <p>Tipo de emprego:</p>
                             <input type="text" />
                         </div>
+                    </form>
+
                     </div>
 
                 </div>

@@ -1,29 +1,34 @@
 header {
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    height: 5em;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 5em;
 }
 
 .cabecalho {
-    display: flex;
-   background-color: #000;
-   color: #FFF;
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 nav > a {
-    color: #ffffff;
-    margin: .5em;
-    padding-right: 2em;
-    text-decoration: none;
+  color: #ffffff;
+  margin: 0.5em;
+  padding-right: 2em;
+  text-decoration: none;
 }
 
 nav:hover {
-    background-color: #fe0202;
+  background-color: #fe0202;
 }
 
 img {
-    padding-left: 2.5em;
+  padding-left: 2.5em;
 }

@@ -1,36 +1,53 @@
-.container{
-    background: #000000;
-    max-width: 200vh;
-
+.container {
+  background: #000000;
+  height: 100vh;
 }
 
-.calorie-calculator{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly
+.calorie-calculator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+  height: 100vh;
 }
 
-form-container, h1, p, h3{
-color: #ffffff;
+.form-container,
+h1,
+p,
+h3 {
+  color: #ffffff;
+}
+.form-container h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+.respostas-imediadta {
+  background-color: rgba(156, 156, 156, 0.5);
+  padding: 15px;
+  border-radius: 25px;
+}
+.respostas-imediadta h3 {
+  text-align: center;
 }
 
-.form{
-    display: flex;
-    flex-wrap: wrap;
-    background: #9C9C9C;
-    padding: 15px;
-    border-radius: 25px;
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form div {
-    margin: 5px;
+  margin: 5px;
 }
-
-input[type=text] {
-    width: 50%; 
-    padding: 10px;
-    box-sizing: border-box; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
