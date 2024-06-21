@@ -17,11 +17,14 @@ p,
 h3 {
   color: #ffffff;
 }
+
+
 .form-container h1 {
   text-align: center;
   font-size: 38px;
   margin-bottom: 35px;
 }
+
 .respostas-imediadta {
   background-color: rgba(156, 156, 156, 0.5);
   padding: 15px;
@@ -33,12 +36,18 @@ h3 {
 
 .form {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr ;
 }
 
 .form div {
   margin: 5px;
 }
+
+.atividades-flex{
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+}
+
 input[type="text"] ,[type="number"] {
   width: 100%;
   padding: 10px;
@@ -47,7 +56,7 @@ input[type="text"] ,[type="number"] {
   border-radius: 4px;
 }
 
-.form-container button{
+.button-calcule{
     padding: 8px 15px;
     border-radius: 5px;
     background: linear-gradient(to bottom, #FFBF00, #F2A50C);
