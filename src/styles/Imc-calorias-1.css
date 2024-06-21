@@ -1,14 +1,14 @@
 .container {
   background: #000000;
-  height: 100vh;
+  max-height: 100vh;
 }
 
 .calorie-calculator {
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-evenly;
   height: 100vh;
+  flex-direction: column;
 }
 
 .form-container,
@@ -44,8 +44,24 @@ h3 {
 }
 
 .atividades-flex{
-    display: grid;
-    grid-template-columns:  1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 70vw;
+    border-radius: 20px;
+}
+
+.img-flex{
+  display: grid;
+  justify-items: center;
+
+}
+.img-flex button {
+  padding: 12px 15px;
+  border-radius: 20px;
+  
 }
 
 input[type="text"] ,[type="number"] {

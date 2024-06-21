@@ -1,5 +1,8 @@
 import "../styles/Imc-calorias-1.css";
 import leve from "../assets/icon-sitting-on-chair.png";
+import moderada from "../assets/icon-stand-up.png";
+import elevada from "../assets/icon-walking.png";
+import intensa from "../assets/icon-walking.png";
 import React, { useState } from "react";
 
 function Calorias01() {
@@ -74,31 +77,31 @@ console.log(CalculoMasculino)
                 </select>
               </div>
             </form>
+        </div>
             <h2>Qual é o seu nível de atividade diária?</h2>
+          </div>
         <div className="atividades-flex">
-          <div>
+          <div className="img-flex">
             <img src={leve} alt="" />
-            <button>Atividade leve</button>          
+            <button value='leve'>Atividade leve</button>          
           </div>
 
-          <div>
-            <img src={leve} alt="" />
-            <button>Atividade moderada</button>
+          <div className="img-flex">
+            <img src={moderada} alt="" />
+            <button value='moderada'>Atividade moderada</button>
           </div>
 
-          <div>
-            <img src={leve} alt="" />
-            <button>Atividade elevada</button>
+          <div className="img-flex">
+            <img src={elevada} alt="" />
+            <button value='elevada'>Atividade elevada</button>
           </div>
 
-          <div>
-            <img src={leve} alt="" />
-            <button>Atividade intensa</button>
+          <div className="img-flex">
+            <img src={intensa} alt="" />
+            <button value='intensa'>Atividade intensa</button>
           </div>
         </div>
             <button className="button-calcule" onClick={TaxaMetabólicaBasal}>Calcule IMC</button>
-        </div>
-          </div>
       </article>
     </main>
   );
