@@ -15,18 +15,31 @@ header {
   width: 100%;
   top: 0;
   right: 0;
-  z-index: 1000;
 }
 
 nav > a {
   color: #ffffff;
-  margin: 0.5em;
-  padding-right: 2em;
+  padding: 2em;
   text-decoration: none;
 }
 
-nav:hover {
-  background-color: #fe0202;
+:hover.button01 {
+  background-color: #FFBF00;
+  color: #000;
+  padding: 2em;
+}
+
+
+:hover.button02 {
+  background-color: #FFBF00;
+  color: #000;
+  padding: 2em;
+}
+
+:hover.button03 {
+  background-color: #FFBF00;
+  color: #000;
+  padding: 2em;
 }
 
 img {

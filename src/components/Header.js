@@ -9,9 +9,9 @@ export default function Header() {
             <header>
                 <a href=""><img src={logo} alt='Logo da página'/></a>
                 <nav>
-                    <Link to='/imc'>IMC</Link>
-                    <Link to='/calorias'>Calculadora</Link>
-                    <Link to='/login'>LOGIN</Link>
+                    <Link to='/imc'  className='button01'>IMC</Link>
+                    <Link to='/calorias' className='button02'>Calculadora</Link>
+                    <Link to='/login' className='button03'>LOGIN</Link>
                 </nav>
             </header>
         </div>

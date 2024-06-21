@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.principal {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    justify-content: space-between;
+
+}
+
+.artigo {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6em;
+}
+
+.titleh2 {
+    font-size: 3em;
+}
+
+.text1 {
+    font-size: 1.5em;
+    font-weight: normal;
+    word-wrap: break-word;
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+.button1 {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #FFBF00, #F2A50C);
+    color: #332200;
+    font-size: 18px;
+}
