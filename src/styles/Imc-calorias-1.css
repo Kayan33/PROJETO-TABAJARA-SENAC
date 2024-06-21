@@ -39,13 +39,24 @@ h3 {
 .form div {
   margin: 5px;
 }
-input[type="text"] {
+input[type="text"] ,[type="number"] {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
+.form-container button{
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #FFBF00, #F2A50C);
+    color: #332200;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+
 img {
   max-width: 100%;
   height: auto;
