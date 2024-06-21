@@ -6,14 +6,14 @@
 
 .principal {
     display: flex;
-    background-color: #000;
+    background-color: #000000f4;
     color: #fff;
     justify-content: space-between;
 
 }
 
 .artigo {
-    height: 100vh;
+    height: 90vh;
     width: 50vw;
     display: flex;
     flex-direction: column;
@@ -42,4 +42,9 @@
     background: linear-gradient(to bottom, #FFBF00, #F2A50C);
     color: #332200;
     font-size: 18px;
+}
+
+.img1 {
+    position: relative;
+    top: 5em;
 }

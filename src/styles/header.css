@@ -15,6 +15,7 @@ header {
   width: 100%;
   top: 0;
   right: 0;
+  z-index: 1000;
 }
 
 nav > a {
@@ -40,5 +41,9 @@ nav > a {
   background-color: #FFBF00;
   color: #000;
   padding: 2em;
+}
+
+img {
+  padding-left: 2em;
 }
 
