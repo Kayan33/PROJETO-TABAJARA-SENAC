@@ -10,8 +10,8 @@ const[idade, setIdade] = useState('')
 const[altura, setAltura] = useState('')
 const[peso, setPeso] = useState('')
 const[sexo, setSexo] = useState('')
-const[exercicio, setExercicio] = useState('')
-const[tipoEmprego, setTipoEmprego] = useState('')
+// const[exercicio, setExercicio] = useState('')
+// const[tipoEmprego, setTipoEmprego] = useState('')
 const [calculoexecutavel, setCalculoexecutavel]= useState (false)
 const [resultado, setResultado] = useState (null)
 
@@ -60,6 +60,9 @@ function TaxaMetabólicaBasal() {
                 <select 
                 value={sexo}
                 onChange={(e) => setSexo(e.target.value)}>
+                  <option disabled value="">
+                      sexo
+                    </option>
                   <option value='masculino'>Masculono</option>
                   <option value='feminino'>Feminino</option>
                 </select>
@@ -93,10 +96,18 @@ function TaxaMetabólicaBasal() {
       </article>
       </>
       ):(
-    <div>
-      <h2>resultado </h2>
-      <p>{resultado}</p>
-    </div>
+        <div class="resultado-container">
+  <div class="resultado-item">
+    <h2>Calorias</h2>
+    <p>Aproximadamente, o gasto calórico diário é de 2000</p>
+  </div>
+  <div class="resultado-item">
+    <h2>Calorias</h2>
+    <p>Aproximadamente, o gasto calórico diário é de 2500</p>
+  </div>
+</div>
+
+      
     )}
     </main>
   );

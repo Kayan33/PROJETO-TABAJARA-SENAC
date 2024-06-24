@@ -52,6 +52,7 @@ h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     border: 1px solid #ccc;
+    background: #ffffff;
     padding: 20px;
     width: 70vw;
     border-radius: 20px;
@@ -91,3 +92,21 @@ img {
   height: auto;
   display: block;
 }
+
+
+
+
+.resultado-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Opcional: centraliza os itens verticalmente */
+}
+
+.resultado-item {
+  border: 1px solid #ccc; /* Apenas para visualização */
+  padding: 10px; /* Apenas para visualização */
+  width: 45%; /* Opcional: ajuste a largura conforme necessário */
+}
+
+
+
