@@ -9,11 +9,13 @@
     height: 100vh;
 }
 
-.text 
+.text2 {
+
+}
 
 .img2 {
-    height: 90vh;
-    width: 40vw;
+    height: 80vh;
+    width: 50vw;
     position: relative;
     bottom: 3em;
 }
