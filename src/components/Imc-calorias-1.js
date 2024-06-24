@@ -12,22 +12,25 @@ const[peso, setPeso] = useState('')
 const[sexo, setSexo] = useState('')
 const[exercicio, setExercicio] = useState('')
 const[tipoEmprego, setTipoEmprego] = useState('')
+const [calculoexecutavel, setCalculoexecutavel]= useState (false)
+const [resultado, setResultado] = useState (null)
 
 function TaxaMetabólicaBasal() {
+  let resultado;
     if (sexo === 'masculino') {
-        let CalculoMasculino = (13.75*peso) + (5*altura) - (6.76*idade) + 66.5;
-console.log(CalculoMasculino)
+      resultado =   (13.75*peso) + (5*altura) - (6.76*idade) + 66.5
     }  else if (sexo === 'feminino'){
-        let CalculoFeminino = (9.56*peso) + (1.85* altura) - (4.68*idade) + 665
-        console.log(CalculoFeminino)
+       resultado =  (9.56*peso) + (1.85* altura) - (4.68*idade) + 665
     }
-    
-
-    
+   setResultado(resultado)
+    setCalculoexecutavel (true);
 }
  
   return (
     <main className="container">
+      {!calculoexecutavel?(
+        <>
+      
       <article className="calorie-calculator">
         <div className="form-container">
           <h1>Calculadora de Calorias</h1>
@@ -51,21 +54,6 @@ console.log(CalculoMasculino)
                 <input type="number" 
                 value={peso}
                 onChange={(e) => setPeso(e.target.value)}/>
-              </div>
-
-
-              
-              <div>
-                <p>Exercício semanal:</p>
-                <input type="text" 
-                value={exercicio}
-                onChange={(e) => setExercicio(e.target.value)}/>
-              </div>
-              <div>
-                <p>Tipo de emprego:</p>
-                <input type="text" 
-                value={tipoEmprego}
-                onChange={(e) => setTipoEmprego(e.target.value)}/>
               </div>
               <div>
                 <p>Sexo:</p>
@@ -103,6 +91,13 @@ console.log(CalculoMasculino)
         </div>
             <button className="button-calcule" onClick={TaxaMetabólicaBasal}>Calcule IMC</button>
       </article>
+      </>
+      ):(
+    <div>
+      <h2>resultado </h2>
+      <p>{resultado}</p>
+    </div>
+    )}
     </main>
   );
 }
