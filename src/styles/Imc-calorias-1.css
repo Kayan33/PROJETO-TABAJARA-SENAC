@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 89.6vh;
+  height: 100vh;
   flex-direction: column;
 }
 
@@ -34,42 +34,45 @@ h3 {
   padding: 15px;
   border-radius: 25px;
 }
+
 .respostas-imediadta h3 {
   text-align: center;
 }
 
 .form {
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form div {
   margin: 5px;
 }
 
-.atividades-flex{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    background: #ffffff;
-    padding: 20px;
-    width: 70vw;
-    border-radius: 20px;
+.atividades-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  background: #ffffff;
+  padding: 20px;
+  width: 70vw;
+  border-radius: 20px;
 }
 
-.img-flex{
+.img-flex {
   display: grid;
   justify-items: center;
 
 }
+
 .img-flex button {
   padding: 12px 15px;
   border-radius: 20px;
-  
+
 }
 
-input[type="text"] ,[type="number"] {
+input[type="text"],
+[type="number"] {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -77,13 +80,13 @@ input[type="text"] ,[type="number"] {
   border-radius: 4px;
 }
 
-.button-calcule{
-    padding: 8px 15px;
-    border-radius: 5px;
-    background: linear-gradient(to bottom, #FFBF00, #F2A50C);
-    color: #332200;
-    font-size: 18px;
-    margin-top: 20px;
+.button-calcule {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background: linear-gradient(to bottom, #FFBF00, #F2A50C);
+  color: #332200;
+  font-size: 18px;
+  margin-top: 20px;
 }
 
 
@@ -94,19 +97,31 @@ img {
 }
 
 
-
-
 .resultado-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* Opcional: centraliza os itens verticalmente */
+  color: #ccc;
 }
 
 .resultado-item {
-  border: 1px solid #ccc; /* Apenas para visualização */
-  padding: 10px; /* Apenas para visualização */
-  width: 45%; /* Opcional: ajuste a largura conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border: 5px solid #ccc;
+  border-radius: 50%;
+  transition: border 0.5s ease-in-out;
 }
 
+.resultado-item p {
+  color: #000000;
+}
 
+.resultado-item h3 {
+  text-align: center;
+  color: #ffffff;
+}
 
+.resultado-item:hover {
+  border-color: #3498db; /* Cor da borda quando o mouse estiver sobre o elemento */
+}
