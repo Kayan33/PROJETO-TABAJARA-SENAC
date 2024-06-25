@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <div className="cabecalho">
             <header>
-                <a href=""><img src={logo} alt='Logo da página'/></a>
+                <Link to='/' className='img-logo'><img src={logo} alt='Logo da página'/></Link>
                 <nav>
                     <Link to='/imc'  className='button01'>IMC</Link>
                     <Link to='/calorias' className='button02'>Calculadora</Link>

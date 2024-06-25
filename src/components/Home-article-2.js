@@ -18,7 +18,7 @@ export default function Home_Article2() {
                     suas refeições e descubra rotinas de exercícios
                     adaptadas às suas necessidades.
                     Comece sua jornada rumo ao bem-estar hoje mesmo!
-                    <Link to='/calorias'>Calculadora de calorias</Link>
+                    <Link to='/calorias'className="button-calcule">Calculadora de calorias</Link>
                     </p>
                 </div>
             </article>

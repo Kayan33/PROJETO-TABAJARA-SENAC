@@ -6,16 +6,41 @@
 
 .artigo2 {
     display: flex;
-    height: 100vh;
+    height: 80vh;
 }
 
 .text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text2 > p {
+    margin-left: 5em;
+    font-size: 1.5em;
+    color: #000;
+    word-wrap: break-word;
+    width: 35em;
 
 }
 
 .img2 {
     height: 80vh;
-    width: 50vw;
+    width: 30em;
     position: relative;
     bottom: 3em;
+}
+
+.button-calcule{
+    padding: 8px 15px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom, #FFBF00, #F2A50C);
+    color: #332200;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 20px;
+    position: relative;
+    top: 4em;
+    right: 7em;
+    text-decoration: none;
 }
