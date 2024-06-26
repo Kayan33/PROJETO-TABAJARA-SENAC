@@ -10,8 +10,7 @@ export default function Header() {
                 <Link to='/' className='img-logo'><img src={logo} alt='Logo da página'/></Link>
                 <nav>
                     <Link to='/imc'  className='button01'>IMC</Link>
-                    <Link to='/calorias' className='button02'>Calculadora</Link>
-                    <Link to='/login' className='button03'>LOGIN</Link>
+                    <Link to='/calorias' className='button02'>Calcular Calorias</Link>
                 </nav>
             </header>
         </div>
