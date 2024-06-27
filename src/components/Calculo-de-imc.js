@@ -5,7 +5,7 @@ import Normal from './PesoNormal'
 import SobrePeso from './SobrePeso'
 import Obesidade1 from './Obesidade-1'
 import homem from '../assets/homem.png'
-import balanca from '../assets/icon-manual-handling.png'
+import { Link } from "react-router-dom";
 
 export default function CalculoDeImc() {
 
@@ -84,10 +84,24 @@ export default function CalculoDeImc() {
                 <img className="img-imc" src={homem} alt="Homem que treina" />
                
             </main>
+            <div className="grafico-de-peso">
+                <p>  66.8 Kg </p>
+                <p>  66.8 Kg a 89.9 </p>
+                <p>  89.9 a 108.3 Kg </p>
+                <p>  66.8 Kg </p>
+                <p>  66.8 Kg </p>
+            </div>
+            <div className="grafico-de-peso2">
+                <p className="blue">&lt;18.5</p>
+                <p className="green">18.5 a 24.9</p>
+                <p className="yellow">24.9 a 30</p>
+                <p className="orange">&gt;30</p>
+                <p className="red">35 &gt;</p>
+            </div>
              <div className="resultado">
-                <img src={balanca} alt="balança de peso" />
                 {imc !== null && respostaImc()}
             </div>
+            <Link to='/calorias' className="calcular-calorias">Calcular Calorias</Link>
         </div>
     )
 }
