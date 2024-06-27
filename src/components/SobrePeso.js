@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/text.css';
 
 export default function SobrePeso({imc}) {
     return (

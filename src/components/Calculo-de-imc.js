@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../styles/imc-article-1.css';
+
 import AbaixoPeso from './AbaixoPeso'
 import Normal from './PesoNormal'
 import SobrePeso from './SobrePeso'
@@ -25,7 +26,7 @@ export default function CalculoDeImc() {
             return <AbaixoPeso imc={imc}/>
         } else if (imc >= 18.5 && imc <= 24.9) {
             return <Normal imc={imc}/>
-        } else if (imc >= 25.0 && imc <= 29.9) {
+        } else if (imc >= 24.9 && imc <= 29.9) {
             return <SobrePeso imc={imc}/>
         } else if (imc >= 30.0 && imc <= 34.9) {
             return <Obesidade1 imc={imc}/>
@@ -98,10 +99,9 @@ export default function CalculoDeImc() {
                 <p className="orange">&gt;30</p>
                 <p className="red">35 &gt;</p>
             </div>
-             <div className="resultado">
+             <div>
                 {imc !== null && respostaImc()}
-            </div>
-            <Link to='/calorias' className="calcular-calorias">Calcular Calorias</Link>
+            </div>  
         </div>
     )
 }
